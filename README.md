@@ -64,7 +64,7 @@ You can set a delay intiate the back detect.  Very similar to setting the time i
      :   :    __    :   ;
       :   `:'.--.`:'   ;
        `.  : o  o :  .'
-< MIT > :   `----'   :  
+: MIT : :   `----'   :  
         : .  :'`:  . :
         `.:.'    `.:.' 
 
