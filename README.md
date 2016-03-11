@@ -1,7 +1,7 @@
 backDetect
 ---
 
-Determining when a user clicks their browser's back button has never been easier with this jQuery plugin.  With a quick easy install and a little bit of set up work you'll be firing callback functions on back button declaration in no time.  
+Determining when a user clicks their browser's back button has never been easier with this jQuery plugin.  With a quick easy install and a little bit of set up work you'll be firing callback functions on back button declarations in no time.  
 
 ### Browser Support
 
@@ -15,7 +15,7 @@ Note about IE: The 1x1.png is required for this plugin to work correctly in IE. 
 	var backDetectValues = {
 		frameLoaded: 0,
 		...
-		frameDataSrc: '1x1.png'
+		frameDataSrc: '1x1.png' <-- this value here
 	};
 ```
 
