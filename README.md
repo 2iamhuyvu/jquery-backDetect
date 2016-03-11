@@ -1,7 +1,7 @@
-# jquery-backDetect
+backDetect
 ---
 
-jQuery backDetect is a jQuery plugin that is used to determine when a user clicks their browser's back button and fire a callback function before the browser actually jumps back a page. 
+Determining when a user clicks their browser's back button has never been easier with this jQuery plugin.  With a quick easy install and a little bit of set up work you'll be firing callback functions on back button declaration in no time.  
 
 ### Browser Support
 
@@ -64,7 +64,7 @@ You can set a delay intiate the back detect.  Very similar to setting the time i
      :   :    __    :   ;
       :   `:'.--.`:'   ;
        `.  : o  o :  .'
-   MIT  :   `----'   :  
+< MIT > :   `----'   :  
         : .  :'`:  . :
         `.:.'    `.:.' 
 
