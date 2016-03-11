@@ -21,6 +21,8 @@ Note about IE: The 1x1.png is required for this plugin to work correctly in IE. 
 
 ### Basic Usage
 
+Most likely window.load, but for shits and giggles document.load works too.  Can append to any element, selector or class, but would recoomend 'body'.
+
 ``` html
 <script src='backdetect.jquery.js'></script>
 <script>
