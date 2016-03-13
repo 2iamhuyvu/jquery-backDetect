@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>backDetect jQuery Plugin</title>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=IE8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="./jquery.backDetect.js"></script>
+
+    <!-- LAYOUT CSS // NOT REQUIRED for hoverIntent, just for prettification -->
+    <style type="text/css" media="screen">
+        body {background:#fff; font-family:sans-serif; font-size:.9em; color:#000; margin:0; padding:1em; line-height:1.3em; max-width:55em;}
+        h2 {width:100%; border-bottom:#cc9 1px solid; margin:0 0 .5em 0; padding:1em 0 0 0; font-size:1.2em;}
+        h3 {display:block; margin:0; padding:0 0 1px 0; font-size:1em; font-weight:bold;}
+        p {margin:0; padding:0 0 1em 0; clear:both;}
+        pre {background:#eee; color:#666; padding:.8em; margin:0; font-size:.9em; font-family:sans-serif; overflow:auto;}
+        a {color:#787850; text-decoration:underline;}
+        a:hover {text-decoration:none;}
+        ul {margin:0; padding:0 0 0 1em; clear:both;}
+        ul li {margin:0; padding:0 0 1em .2em;}
+    </style>
+	<body>
+
+			Basic useage for back detection. In this case, you'll get a very helpful message alerting you that the back button was clicked on.
+					
+			<pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">'</span>backdetect.jquery.js<span class="pl-pds">'</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+			<span class="pl-s1">&lt;<span class="pl-ent">script</span>&gt;</span>
+			<span class="pl-s1">        <span class="pl-en">$</span>(<span class="pl-c1">window</span>).<span class="pl-c1">load</span>(<span class="pl-k">function</span>(){</span>
+			<span class="pl-s1">            <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>body<span class="pl-pds">'</span></span>).<span class="pl-en">backDetect</span>(<span class="pl-k">function</span>(){</span>
+			<span class="pl-s1">                <span class="pl-c">// Callback function</span></span>
+			<span class="pl-s1">            });</span>
+			<span class="pl-s1">        });</span>
+			<span class="pl-s1">&lt;/<span class="pl-ent">script</span>&gt;</span></pre>DataSrc: '1x1.png' &lt;-- this value here
+    };</pre>
+
+
+	</body>
+</html>
