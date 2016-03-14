@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="stylesheets/github-light.css">
     <meta name="viewport" content="width=device-width">
     <script src="javascripts/scale.fix.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.backDetect.js"></script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   <script>
       $(window).load(function(){
         $('body').backDetect(function(){
-          $("Look forward to the future, not the past!");
+          alert("Look forward to the future, not the past!");
         });
       });
   </script>
@@ -23,7 +25,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Jquery-backdetect</h1>
+        <h1>backDetect</h1>
         <p>jQuery backDetect is a jQuery plugin that is used to determine when a user clicks the back button and fire a callback function.</p>
 
         <p class="view"><a href="https://github.com/ianrogren/jquery-backDetect">View the Project on GitHub <small>ianrogren/jquery-backDetect</small></a></p>
@@ -39,9 +41,22 @@
         <h3>
     <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using jQuery-backDetect</h3>
 
+
+
     <p>It's a very simple and straightforward plugin, just download and call on it in the following way.  It can be attached onto any DOM element at either document.ready or window.load, but I would recommend attaching this function to the body at window.load in the folllowing fassion:</p>
 
-    <p>Click the back button to be altered "test!"</p>
+    <pre>
+      
+      $(window).load(function(){
+        $('body').backDetect(function(){
+          alert("Look forward to the future, not the past!");
+        });
+      });
+    </pre>
+
+    <p>Please note that IE requires the 1x1.png to function corrlectly.  All other browsers are good to go.</p>
+
+    <p>Click the back button to test.</p>
     
         
   </body>
