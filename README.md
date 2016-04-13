@@ -3,6 +3,8 @@ backDetect
 
 Determining when a user clicks their browser's back button has never been easier with this jQuery plugin.  With a quick easy install and a little bit of set up work you'll be firing callback functions on back button declarations in no time.  
 
+View a demo of it <a href="http://ianrogren.github.io/jquery-backDetect/">here</a>.
+
 ### Browser Support
 
 | <img src="http://i.imgur.com/dJC1GUv.png" width="48px" height="48px" alt="Chrome logo"> | <img src="http://i.imgur.com/o1m5RcQ.png" width="48px" height="48px" alt="Firefox logo"> | <img src="http://i.imgur.com/8h3iz5H.png" width="48px" height="48px" alt="Internet Explorer logo"> | <img src="http://i.imgur.com/j3tgNKJ.png" width="48px" height="48px" alt="Safari logo"> |
