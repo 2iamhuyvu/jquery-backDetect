@@ -30,15 +30,9 @@
 		if(delay !== null){
 			backDetectValues.frameDelay = delay;
 		}
-		if(backDetectValues.frameNavigator.indexOf('MSIE ') > -1 || backDetectValues.frameNavigator.indexOf('Trident') > -1){
-			setTimeout(function(){
-				$('<iframe src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC?loading" style="display:none;" id="backDetectFrame" onload="jQuery.fn.frameInit();"></iframe>').appendTo(backDetectValues.frameThis);
-			}, backDetectValues.frameDelay);
-		} else {
-			setTimeout(function(){
-				$('<iframe src="about:blank?loading" style="display:none;" id="backDetectFrame" onload="jQuery.fn.frameInit();"></iframe>').appendTo(backDetectValues.frameThis);
-			}, backDetectValues.frameDelay);
-		}	  
+		setTimeout(function(){
+			$('<iframe src="' + backDetectValues.frameDataSrc + '?loading" style="display:none;" id="backDetectFrame" onload="jQuery.fn.frameInit();"></iframe>').appendTo(backDetectValues.frameThis);
+		}, backDetectValues.frameDelay);	  
 	};
 
 	$.fn.frameInit = function(){
@@ -59,11 +53,7 @@
   	clearTimeout(backDetectValues.frameTime);
 		backDetectValues.frameSrc = backDetectValues.frameDetect.src;
   	if(backDetectValues.frameLoaded == 1 && backDetectValues.frameSrc.indexOf("historyLoaded") == -1){
-  		if(backDetectValues.frameNavigator.indexOf('MSIE ') > -1 || backDetectValues.frameNavigator.indexOf('Trident') > -1){
-  			backDetectValues.frameDetect.src = backDetectValues.frameDataSrc + "?historyLoaded";
-  		} else {
-				backDetectValues.frameDetect.src = "about:blank?historyLoaded";
-  		}
+  		backDetectValues.frameDetect.src = backDetectValues.frameDataSrc + "?historyLoaded";
   	}
   };
 
