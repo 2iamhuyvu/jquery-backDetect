@@ -1,7 +1,7 @@
 backDetect
 ---
 
-Determining when a user clicks their browser's back button has never been easier with this jQuery plugin.  With a quick easy install and a little bit of set up work you'll be firing callback functions on back button declarations in no time.  
+Determining when a user clicks their browser's back button has never been easier with this jQuery plugin.  With a quick easy install and minimal set up work you'll be firing callback functions on back button declarations in no time.  
 
 View a demo of it <a href="http://ianrogren.github.io/jquery-backDetect/">here</a>.
 
@@ -11,19 +11,9 @@ View a demo of it <a href="http://ianrogren.github.io/jquery-backDetect/">here</
 |:---:|:---:|:---:|:---:|:---:|
 | All ✔ | All ✔ | 9+ ✔ | All ✔ |
 
-Note about IE: The 1x1.png is required for this plugin to work correctly in IE.  By default, this plugin looks for the 1x1.png in the same directory as the backDetect javascript file.  You can change the location of the 1x1.png by updating the frameDataSrc value:
-
-``` html
-	var backDetectValues = {
-		frameLoaded: 0,
-		...
-		frameDataSrc: '1x1.png' <-- this value here
-	};
-```
-
 ### Basic Usage
 
-Most likely window.load, but for shits and giggles document.load works too.  Can append to any element, selector or class, but would recoomend 'body'.
+Can append to any element, selector or class:
 
 ``` html
 <script src='backdetect.jquery.js'></script>
@@ -55,6 +45,9 @@ You can set a delay intiate the back detect.  Very similar to setting the time i
 | --- | --- | --- |
 | delay | <pre>delay: 0</pre> |  The length of time it takes for the backDetect plugin to fire and monitor when a user hits the back button. 
 
+### Change Log
+
+1.0.1 Removed the need for the 1x1.png image for IE.
 
 ### Licence 
 ``` html
