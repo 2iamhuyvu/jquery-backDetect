@@ -6,7 +6,7 @@
  * Licensed under the MIT license:
  *   http://www.opensource.org/licenses/mit-license.php
  *
- * Version:  1.0.0
+ * Version:  1.0.1
  *
  */
 (function($){
@@ -21,7 +21,7 @@
  		frameThis: null,
  		frameNavigator: window.navigator.userAgent,
  		frameDelay: 0,
- 		frameDataSrc: '1x1.png'
+ 		frameDataSrc: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC'
  	};
 
 	$.fn.backDetect = function(callback, delay) {
@@ -32,7 +32,7 @@
 		}
 		if(backDetectValues.frameNavigator.indexOf('MSIE ') > -1 || backDetectValues.frameNavigator.indexOf('Trident') > -1){
 			setTimeout(function(){
-				$('<iframe src="1x1.png?loading" style="display:none;" id="backDetectFrame" onload="jQuery.fn.frameInit();"></iframe>').appendTo(backDetectValues.frameThis);
+				$('<iframe src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC?loading" style="display:none;" id="backDetectFrame" onload="jQuery.fn.frameInit();"></iframe>').appendTo(backDetectValues.frameThis);
 			}, backDetectValues.frameDelay);
 		} else {
 			setTimeout(function(){
