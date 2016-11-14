@@ -9,11 +9,11 @@ View a demo of it <a href="http://ianrogren.github.io/jquery-backDetect/">here</
 
 | <img src="http://i.imgur.com/dJC1GUv.png" width="48px" height="48px" alt="Chrome logo"> | <img src="http://i.imgur.com/o1m5RcQ.png" width="48px" height="48px" alt="Firefox logo"> | <img src="http://i.imgur.com/8h3iz5H.png" width="48px" height="48px" alt="Internet Explorer logo"> | <img src="http://i.imgur.com/j3tgNKJ.png" width="48px" height="48px" alt="Safari logo"> |
 |:---:|:---:|:---:|:---:|:---:|
-| All ✔ | All ✔ | 9+ ✔ | All ✔ |
+| All ✔ | All ✔ | 8+ ✔ | All ✔ |
 
 ### Basic Usage
 
-Can append to any element, selector or class:
+Can append to any element or class:
 
 ``` html
 <script src='backdetect.jquery.js'></script>
@@ -28,7 +28,7 @@ Can append to any element, selector or class:
 
 ### Custom Options
 
-You can set a delay intiate the back detect.  Very similar to setting the time in jquery animate:
+You can set a delay intiate the back detect.  Very similar to setting the time in setTimeout:
 
 ``` html
 <script src='backdetect.jquery.js'></script>
