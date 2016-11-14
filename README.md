@@ -13,7 +13,7 @@ View a demo of it <a href="http://ianrogren.github.io/jquery-backDetect/">here</
 
 ### Basic Usage
 
-Can append to any element, selector or class:
+Can append to any element or class:
 
 ``` html
 <script src='backdetect.jquery.js'></script>
