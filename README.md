@@ -5,6 +5,12 @@ Determining when a user clicks their browser's back button has never been easier
 
 View a demo of it <a href="http://ianrogren.github.io/jquery-backDetect/">here</a>.
 
+### Installation
+---
+- Download the latest release from here (or `npm install jquery-backdetect` or `bower install jquery-backdetect`)
+- Copy either `jquery.backDetect.js` or `jquery.backDetect.min.js` to your scripts folder
+- Include the script after you call on `jQuery`
+
 ### Browser Support
 
 | <img src="http://i.imgur.com/dJC1GUv.png" width="48px" height="48px" alt="Chrome logo"> | <img src="http://i.imgur.com/o1m5RcQ.png" width="48px" height="48px" alt="Firefox logo"> | <img src="http://i.imgur.com/8h3iz5H.png" width="48px" height="48px" alt="Internet Explorer logo"> | <img src="http://i.imgur.com/j3tgNKJ.png" width="48px" height="48px" alt="Safari logo"> |
@@ -46,6 +52,8 @@ You can set a delay intiate the back detect.  Very similar to setting the time i
 | delay | <pre>delay: 0</pre> |  The length of time it takes for the backDetect plugin to fire and monitor when a user hits the back button. 
 
 ### Change Log
+
+1.0.2 Added backDetect to `npm` and `bower` repos.
 
 1.0.1 Removed the need for the 1x1.png image for IE.
 
