@@ -11,7 +11,7 @@
  */
 (function($){
 	"use strict";
-
+	
  	var backDetectValues = {
  		frameLoaded: 0,
  		frameTry: 0,
@@ -31,9 +31,15 @@
 		if(delay !== null){
 			backDetectValues.frameDelay = delay;
 		}
-		setTimeout(function(){
-			$("<iframe src='" + backDetectValues.frameDataSrc + "?loading' style='display:none;'' id='backDetectFrame' onload='jQuery.fn.frameInit();'></iframe>").appendTo(backDetectValues.frameThis);
-		}, backDetectValues.frameDelay);	  
+		if(backDetectValues.frameNavigator.indexOf("MSIE ") > -1 || backDetectValues.frameNavigator.indexOf("Trident") > -1){
+				setTimeout(function(){
+					$("<iframe src='" + backDetectValues.frameDataSrc + "?loading' style='display:none;' id='backDetectFrame' onload='jQuery.fn.frameInit();'></iframe>").appendTo(backDetectValues.frameThis);
+				}, backDetectValues.frameDelay);
+		} else {
+			setTimeout(function(){
+				$("<iframe src='about:blank?loading' style='display:none;' id='backDetectFrame' onload='jQuery.fn.frameInit();'></iframe>").appendTo(backDetectValues.frameThis);
+			}, backDetectValues.frameDelay);
+		}		
 	};
 
 	$.fn.frameInit = function(){
@@ -53,8 +59,12 @@
   $.fn.setupFrames = function(){
   	clearTimeout(backDetectValues.frameTime);
 		backDetectValues.frameSrc = backDetectValues.frameDetect.src;
-  	if(backDetectValues.frameLoaded === 1 && backDetectValues.frameSrc.indexOf("historyLoaded") === -1){
-  		backDetectValues.frameDetect.src = backDetectValues.frameDataSrc + "?historyLoaded";
+  	if(backDetectValues.frameLoaded == 1 && backDetectValues.frameSrc.indexOf("historyLoaded") == -1){
+  		if(backDetectValues.frameNavigator.indexOf("MSIE ") > -1 || backDetectValues.frameNavigator.indexOf("Trident") > -1){
+  			backDetectValues.frameDetect.src = backDetectValues.frameDataSrc + "?historyLoaded";
+  		} else {
+				backDetectValues.frameDetect.src = "about:blank?historyLoaded";
+  		}
   	}
   };
 
