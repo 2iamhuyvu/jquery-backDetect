@@ -1,4 +1,4 @@
-backDetect
+jQuery backDetect
 ---
 
 Determining when a user clicks their browser's back button has never been easier with this jQuery plugin.  With a quick easy install and minimal set up work you'll be firing callback functions on back button declarations in no time.  
