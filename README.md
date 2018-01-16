@@ -28,6 +28,7 @@ Can append to any element or class:
   $(window).load(function(){
     $('body').backDetect(function(){
 	  // Callback function
+      alert("Look forward to the future, not the past!");
     });
   });</script>
 ```
@@ -41,6 +42,7 @@ You can set a delay intiate the back detect.  Very similar to setting the time i
   $(window).load(function(){
     $('body').backDetect(function(){
       // Callback function
+      alert("Look forward to the future, not the past!");
     });
   }, 1000); // <- 1 second delay
 
