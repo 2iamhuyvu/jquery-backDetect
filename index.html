@@ -41,13 +41,12 @@
           <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using jQuery-backDetect
         </h3>
         <p>Can append to any element or class:</p>
-        <pre>
-          $(window).load(function(){
-            $('body').backDetect(function(){
-              alert("Look forward to the future, not the past!");
-            });
-          });
-        </pre>
+<div class="highlight highlight-source-js"><pre>  <span class="pl-en">$</span>(<span class="pl-c1">window</span>).<span class="pl-c1">load</span>(<span class="pl-k">function</span>(){
+    <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>body<span class="pl-pds">'</span></span>).<span class="pl-en">backDetect</span>(<span class="pl-k">function</span>(){
+    <span class="pl-c"><span class="pl-c">//</span> Callback function</span>
+      <span class="pl-en">alert</span>(<span class="pl-s"><span class="pl-pds">"</span>Look forward to the future, not the past!<span class="pl-pds">"</span></span>);
+    });
+  });<span class="pl-k">&lt;</span><span class="pl-k">/</span>script<span class="pl-k">&gt;</span></pre></div>
         <p>Click the back button to test.</p>
       </section>
     </div>
