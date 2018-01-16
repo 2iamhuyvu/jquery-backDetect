@@ -5,7 +5,7 @@ Determining when a user clicks their browser's back button has never been easier
 
 View a demo of it <a href="http://ianrogren.github.io/jquery-backDetect/">here</a>.
 
-**Disclaimer:** This plugin was originally developed for an edge case where I did not have access to the all of the history state functions and I needed a way to set localStorage variable when the back button was clicked.  This plugin works great for very simple back detection, but if you need to do anything more advanced that involves history state functions, this might not be plugin for you.
+**Disclaimer:** This plugin was originally developed for an edge case where I did not have access to the all of the history state functions and I needed a way to set localStorage variable when the back button was clicked.  This plugin works great for very simple back detection, but if you need to do anything more advanced that involves history state functions, this might not be the plugin for you.
 
 ### Installation
 ---
