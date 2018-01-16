@@ -5,6 +5,8 @@ Determining when a user clicks their browser's back button has never been easier
 
 View a demo of it <a href="http://ianrogren.github.io/jquery-backDetect/">here</a>.
 
+**Disclaimer:** This plugin was originally developed for an edge case where I did not have access to the all of the history state functions and I needed a way to set localStorage variable when the back button was clicked.  This plugin works great for very simple back detection, but if you need to do anything more advanced that involves history state functions, this might not be plugin for you.
+
 ### Installation
 ---
 - Download the latest release from here (or `npm install jquery-backdetect` or `bower install jquery-backdetect`)
@@ -13,38 +15,35 @@ View a demo of it <a href="http://ianrogren.github.io/jquery-backDetect/">here</
 
 ### Browser Support
 
-| <img src="http://i.imgur.com/dJC1GUv.png" width="48px" height="48px" alt="Chrome logo"> | <img src="http://i.imgur.com/o1m5RcQ.png" width="48px" height="48px" alt="Firefox logo"> | <img src="http://i.imgur.com/8h3iz5H.png" width="48px" height="48px" alt="Internet Explorer logo"> | <img src="http://i.imgur.com/j3tgNKJ.png" width="48px" height="48px" alt="Safari logo"> |
-|:---:|:---:|:---:|:---:|:---:|
-| All ✔ | All ✔ | 8+ ✔ | All ✔ |
+| Chrome | Firefox | Internet Explorer | Safari |
+| --- | --- | --- | --- |
+| All ✔ | All ✔ | All ✔ | All ✔ |
 
 ### Basic Usage
 
 Can append to any element or class:
 
-``` html
-<script src='backdetect.jquery.js'></script>
-<script>
-		$(window).load(function(){
-			$('body').backDetect(function(){
-				// Callback function
-			});
-		});
-</script>
+``` javascript
+
+  $(window).load(function(){
+    $('body').backDetect(function(){
+	  // Callback function
+    });
+  });</script>
 ```
 
 ### Custom Options
 
 You can set a delay intiate the back detect.  Very similar to setting the time in setTimeout:
 
-``` html
-<script src='backdetect.jquery.js'></script>
-<script>
-		$(window).load(function(){
-			$('body').backDetect(function(){
-				// Callback function
-			});
-		}, 1000); // <- 1 second delay
-</script>
+``` javascript
+
+  $(window).load(function(){
+    $('body').backDetect(function(){
+      // Callback function
+    });
+  }, 1000); // <- 1 second delay
+
 ````
 
 | Settings | Default Value | Description
@@ -53,25 +52,29 @@ You can set a delay intiate the back detect.  Very similar to setting the time i
 
 ### Change Log
 
+1.0.3 Cleaned up javascript and updated README.md
+
 1.0.2 Added backDetect to `npm` and `bower` repos.
 
 1.0.1 Removed the need for the 1x1.png image for IE.
 
+
 ### Licence 
-``` html
-		                    __
-		            _,..,_ (, )
-		         .,'      `,./
-		       .' :`.----.': `,
-		      :   : ^    ^ :   ;
-		     :   :  6    6  :   ;
-		     :   :          :   ;
-		     :   :    __    :   ;
-< MIT >       :   `:'.--.`:'   ;
-		       `.  : o  o :  .'
-		        :   `----'   :  
-		        : .  :'`:  . :
-		        `.:.'    `.:.' 
+```
+
+                        __
+                _,..,_ (, )
+             .,'      `,./
+           .' :`.----.': `,
+          :   : ^    ^ :   ;
+         :   :  6    6  :   ;
+         :   :          :   ;
+         :   :    __    :   ;
+< MIT >   :   `:'.--.`:'   ;
+           `.  : o  o :  .'
+            :   `----'   :  
+            : .  :'`:  . :
+            `.:.'    `.:.' 
 ```
 
 
